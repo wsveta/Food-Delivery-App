@@ -292,9 +292,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  padding: 80px 35px 40px 40px;
+  padding: 35px;
   background-color: #ffffff;
   z-index: 999;
 
@@ -311,17 +311,24 @@ body {
 }
 .close-button {
   position: absolute;
-  top: 35px;
+  right: 80px;
+  top: 20px;
   background-color: transparent;
   border-color: transparent;
 }
 .mobile-close-button {
 }
 .mobile-navs {
+  margin: 35px 0;
+  font-size: 24px;
 }
-.mobile-nav {
+.mobile-nav:not(:last-child) {
+  margin-bottom: 25px;
 }
 
+.mobile-nav:active {
+  color: var(--accent-color)
+}
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
