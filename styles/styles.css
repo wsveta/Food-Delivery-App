@@ -153,7 +153,8 @@ body {
   gap: 131px;
   margin-bottom: 157px;
 }
-.step:nth-child(2) {
+.step:nth-child(1),
+.step:nth-child(3) {
   flex-direction: row-reverse;
 }
 .step {
@@ -377,6 +378,10 @@ body {
   .app-store-hero:focus {
     color: #fff;
   }
+  .app-store-download {
+    margin-right: 16px;
+    margin-top: 16px;
+  }
   .insctuction-section {
     padding: 0 37px;
   }
@@ -384,12 +389,14 @@ body {
     font-size: 24px;
     margin-bottom: 114px;
   }
-  .step {
-    flex-direction: column-reverse;
+  .steps {
+    gap: 44px;
     text-align: center;
   }
-  .step:nth-child(2) {
-    flex-direction: column-reverse;
+  .step:nth-child(1),
+  .step:nth-child(3),
+  .step {
+    display: block;
   }
 
   .instruction-subtitle {
@@ -400,16 +407,17 @@ body {
   .download-section {
     background-image: none;
     background-color: var(--navs-color);
-    padding: 110px 0;
+    padding: 110px 10px;
   }
   .download-title {
     width: 310px;
     display: inline-block;
   }
   .download-text {
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
   .footer-section {
+    text-align: center;
     padding: 60px 90px 43px 90px;
     display: flex;
     flex-direction: column;
@@ -421,5 +429,4 @@ body {
   .logo-footer {
     display: none;
   }
-
 }
