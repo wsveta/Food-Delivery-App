@@ -7,7 +7,7 @@
 }
 body {
   color: var(--paragrapg-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .header-block {
   display: flex;
@@ -31,7 +31,6 @@ body {
   letter-spacing: 0.2px;
   transition: 0.25s;
 }
-
 
 .menu-item:hover,
 .menu-item:focus {
@@ -75,7 +74,7 @@ body {
 }
 .playstore-hero {
   width: 236px;
-  padding: 16px 0px;
+  padding: 18px 0px;
   border-radius: 30px;
   border: 1px solid transparent;
   background: var(--accent-color);
@@ -106,7 +105,7 @@ body {
 
 .app-store-hero {
   width: 236px;
-  padding: 16px 0px;
+  padding: 18px 0px;
   border-radius: 30px;
   border: 1px solid #fff;
   background-color: transparent;
@@ -152,6 +151,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 131px;
+  margin-bottom: 157px;
 }
 .step:nth-child(2) {
   flex-direction: row-reverse;
@@ -240,7 +240,7 @@ body {
   transition: 0.25s;
 }
 .app-store-download {
-  padding: 16px 45px;
+  padding: 18px 45px;
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -331,7 +331,7 @@ body {
   .header-block {
     padding: 17px 16px;
     box-shadow: 0px 1px 6px 10px rgba(116, 116, 117, 0.08),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   }
   .navs {
     display: none;
@@ -344,7 +344,6 @@ body {
     background-image: none;
     padding-top: 50px;
     padding-bottom: 22px;
-  
   }
   .hero-name {
     color: var(--paragrapg-color);
@@ -363,10 +362,64 @@ body {
     font-size: 24px;
     margin-bottom: 50px;
   }
+  .playstore-hero:hover,
+  .playstore-hero:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
   .app-store-hero {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
     margin-left: 0;
     margin-top: 17px;
   }
+  .app-store-hero:hover,
+  .app-store-hero:focus {
+    color: #fff;
+  }
+  .insctuction-section {
+    padding: 0 37px;
+  }
+  .inscruction-title {
+    font-size: 24px;
+    margin-bottom: 114px;
+  }
+  .step {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .step:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .instruction-subtitle {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .download-section {
+    background-image: none;
+    background-color: var(--navs-color);
+    padding: 110px 0;
+  }
+  .download-title {
+    width: 310px;
+    display: inline-block;
+  }
+  .download-text {
+    color: #BDBDBD;
+  }
+  .footer-section {
+    padding: 60px 90px 43px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .copywright {
+    margin: 0;
+  }
+  .logo-footer {
+    display: none;
+  }
+
 }
